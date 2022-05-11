@@ -152,20 +152,6 @@ link.href = '../payloads/index-online.html';
 link.click();  
 }
 
-function load_goldhen221(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.2.2. Please wait!!!</h1>";
-LoadedMSG="GoldHen V2.2.2 Loaded. Please Close The Browser!!! Re-Open it if you wanna lauch any other payload";
-PLfile = "pl_goldhen221.bin";
-if (sessionStorage.goldhen != "loaded")
-{
-  loadPayloadData();
-
-}else{
-  goldhendone();
-  return;
-}
-}
-
 function load_goldhenb2(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B2. Please wait!!!</h1>";
 LoadedMSG="GoldHen V2.0B2 Loaded. Please Close The Browser!!! Re-Open it if you wanna lauch any other payload";
@@ -193,6 +179,21 @@ if (sessionStorage.goldhen != "loaded")
   return;
 }
 }
+	
+
+function load_goldhen221(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.2.2. Please wait!!!</h1>";
+LoadedMSG="GoldHen V2.2.2 Loaded. Please Close The Browser!!! Re-Open it if you wanna lauch any other payload";
+PLfile = "pl_goldhen221.bin";
+if (sessionStorage.goldhen != "loaded")
+{
+  loadPayloadData();
+
+}else{
+  goldhendone();
+  return;
+}
+}	
 
 function load_binloader(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading Bin Loader on Port 9020. Please wait!!!";
