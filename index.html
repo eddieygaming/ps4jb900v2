@@ -135,6 +135,22 @@ var link = document.createElement('a');
 document.body.appendChild(link);
 link.click();  
 }
+	
+
+function load_goldhen211(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.1.1 Please wait!!!</h1>";
+LoadedMSG="GoldHen V2.1.1 Loaded. Please Close The Browser!!! Re-Open it if you wanna lauch any other payload";
+PLfile = "pl_goldhen211.bin";
+if (sessionStorage.goldhen != "loaded")
+{
+  loadPayloadData();
+  
+}else{
+  goldhendone();
+  return;
+}
+}
+		
 
 function load_plmenu(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading 900FW Payload Menu (Offline)!!!</h1>";
@@ -144,13 +160,7 @@ link.href = './payloads/index.html';
 link.click();  
 }
 
-function load_plmenu_online(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading 900FW Payload Menu (Online)!!!</h1>";
-var link = document.createElement('a');
-document.body.appendChild(link);
-link.href = '../payloads/index-online.html';
-link.click();  
-}
+
 
 function load_goldhenb2(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.0B2. Please wait!!!</h1>";
@@ -166,20 +176,6 @@ if (sessionStorage.goldhen != "loaded")
 }
 }
 
-function load_goldhen211(){
-msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.1.1 Please wait!!!</h1>";
-LoadedMSG="GoldHen V2.1.1 Loaded. Please Close The Browser!!! Re-Open it if you wanna lauch any other payload";
-PLfile = "pl_goldhen211.bin";
-if (sessionStorage.goldhen != "loaded")
-{
-  loadPayloadData();
-  
-}else{
-  goldhendone();
-  return;
-}
-}
-	
 
 function load_goldhen221(){
 msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Loading GoldHen V2.2.2. Please wait!!!</h1>";
